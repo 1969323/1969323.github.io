@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="頂級開發、原鞋開模，匹配98％以上，辰光出品、頂級純原 支持貨到付款">
+<meta name="theme-color" content="#000">
+<title>辰 光 鞋 业</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1749274609190">
+<link rel="stylesheet" href="/media/css/gemini.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.loli.net/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/default.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/media/js/jquery.js"></script>
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>辰 光 鞋 业</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">当地档口</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-globe"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives" target="_self">
+                  <i class="fa fa-globe"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags" target="_self">
+                  <i class="fa fa-globe"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://1969323.github.io/post/guan-yu-wo-men" target="_self">
+                  <i class="fa fa-globe"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item nav-item-active">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友链
+                  
+                </a>
+              </li>
+            
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+      <div
+        class="section-layout gemini ">
+        <div class="section-layout-wrapper">
+          <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">辰 光</p>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">10</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">6</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+  
+  
+
+
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+            <div class="section-box gemini box-shadow-wrapper">
+              <section class="friends-section bg-color slide-down-in">
+                <div class="firends-box" align="center">
+                  <h1 class="firends-title" itemprop="name headline">
+                    友链
+                  </h1>
+                  
+                    
+                        
+                </div>
+                <hr>
+                <div style="text-align:center">
+                  <span class="with-love">
+                    <i class="fa fa-heart"></i>
+                  </span>
+                  <span class="language" data-lan="leave-message">如需添加友链,可以在关于中找到我的联系方式告知我</span>
+                  <span class="with-love">
+                    <i class="fa fa-heart"></i>
+                  </span>
+                </div>
+                <hr>
+                <div class="friends-note">
+                  <p><strong class="language" data-lan="format">友链格式：</strong></p>
+                  <ul>
+                    <li><span class="language" data-lan="site-name">网站名称：</span>辰 光 鞋 业</li>
+                    <li><span class="language" data-lan="site-link">网站地址：</span><a href="https://1969323.github.io" data-pjax-state="">https://1969323.github.io</a></li>
+                    <li><span class="language" data-lan="site-desc">网站描述：</span>頂級開發、原鞋開模，匹配98％以上，辰光出品、頂級純原 支持貨到付款</li>
+                    <li><span class="language" data-lan="site-img">网站头像：</span>
+                      <a href="https://1969323.github.io/images/avatar.png">https://1969323.github.io/images/avatar.png</a>
+                    </li>
+                  </ul>
+                </div>
+                
+  
+
+              </section>
+            </div>
+        </div>
+      </div>
+      <div class="footer-box">
+  <footer class="footer">
+    <center id="runTimeBox">
+      已运行:<span id="run_time"></span>
+    </center>
+    <span id="busuanzi_container_site_pv">浏览数:<span id="busuanzi_value_site_pv"></span> 次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">访客数:<span id="busuanzi_value_site_uv"></span> 人</span>
+
+    <script>
+      BirthDay = new Date('');
+      if (BirthDay.getTime()) {
+        function runTime() {
+          str = "";
+          today = new Date();
+          timeold = today.getTime() - BirthDay.getTime();
+          msPerDay = 24 * 60 * 60 * 1000;
+          e_daysold = timeold / msPerDay;
+          daysold = Math.floor(e_daysold);
+          str += daysold + "天";
+          return str;
+        }
+        setInterval(function () {
+          $("#run_time").html(runTime());
+        }, 1000);
+      } else {
+        document.querySelector('.footer').removeChild(document.querySelector('#runTimeBox'));
+      }
+    </script>
+    <div class="poweredby">
+      
+    </div>
+  </footer>
+  
+    
+        <div class="gemini back-to-top" id="back_to_top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span class="scrollpercent"> <span id="back_to_top_text">0</span>% </span>
+            
+        </div>
+        
+                  
+                        
+</div>
+<script>
+  let sideBarOpen = "sidebar-open";
+  let body = document.body;
+  let back2Top = document.querySelector("#back_to_top"),
+    back2TopText = document.querySelector("#back_to_top_text"),
+    drawerBox = document.querySelector("#drawer_box"),
+    rightSideBar = document.querySelector(".sidebar"),
+    viewport = document.querySelector("body");
+
+  function scrollAnimation(currentY, targetY) {
+    let needScrollTop = targetY - currentY;
+    let _currentY = currentY;
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10);
+      _currentY += dist;
+      window.scrollTo(_currentY, currentY);
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY);
+      } else {
+        window.scrollTo(_currentY, targetY);
+      }
+    }, 1);
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener("scroll", function (e) {
+    let percent =
+      (document.scrollingElement.scrollTop /
+        (document.scrollingElement.scrollHeight -
+          document.scrollingElement.clientHeight)) *
+      100;
+    if (percent > 1 && !back2Top.classList.contains("back-top-active")) {
+      back2Top.classList.add("back-top-active");
+    }
+    if (percent == 0) {
+      back2Top.classList.remove("back-top-active");
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  let hasCacu = false;
+  window.addEventListener("resize", function (e) {
+    calcuHeight();
+  });
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (
+      (!hasCacu && back2Top.classList.contains("pisces")) ||
+      back2Top.classList.contains("gemini")
+    ) {
+      let sideBar = document.querySelector(".sidebar");
+      let navUl = document.querySelector("#site_nav");
+      sideBar.style =
+        "margin-top:" + (navUl.offsetHeight + navUl.offsetTop + 15) + "px;";
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false,
+    MOTION_TIME = 300,
+    RIGHT_MOVE_DIS = "320px";
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll(".right-motion");
+    let right = drawerBox.classList.contains("right");
+
+    let transitionDir = right
+      ? "transition.slideRightIn"
+      : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingRight: "0px",
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingLeft: "0px",
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      jQuery.Velocity(rightSideBar, "stop");
+      jQuery.Velocity(viewport, "stop");
+      jQuery.Velocity(rightMotions, "stop");
+      if (open) {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: RIGHT_MOVE_DIS,
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, transitionDir, {});
+            },
+          }
+        );
+        jQuery.Velocity(viewport, openProp, {
+          duration: MOTION_TIME,
+        });
+      } else {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: "0px",
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, {
+                opacity: 0,
+              });
+            },
+          }
+        );
+        jQuery.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME,
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle("muse-line");
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    };
+  }
+
+  // 链接跳转
+  let newWindow = "false";
+  if (newWindow === "true") {
+    let links = document.querySelectorAll(".post-body a");
+    links.forEach((item) => {
+      if (!item.classList.contains("btn")) {
+        item.setAttribute("target", "_blank");
+      }
+    });
+  }
+
+  let faSearch = document.querySelector("#fa_search");
+  faSearch &&
+    faSearch.addEventListener("click", function () {
+      document.querySelector("#search_mask").style = "";
+    });
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+  // 离开当前页title变化
+  var leaveTitle = "";
+  var normal_title = document.title;
+  if (leaveTitle) {
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState == "hidden") {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+</script>
+
+<link rel="stylesheet" href="/media/css/jquery.fancybox.css" />
+<script src="/media/js/jquery.fancybox.js"></script>
+
+<script>
+  let images = document.querySelectorAll(".section img");
+  images.forEach((image) => {
+    var parent = image.parentElement;
+    var next = image.nextElementSibling;
+    parent.removeChild(image);
+    var aelem = document.createElement("a");
+    aelem.href = image.src;
+    aelem.dataset["fancybox"] = "images";
+    aelem.dataset["rel"] = "fancybox-button";
+    aelem.classList.add("fancybox");
+    aelem.appendChild(image);
+    parent.insertBefore(aelem, next);
+  });
+</script>
+  </div>
+</body>
+
+  <div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://1969323.github.io/post/chen-guang-siyuzuye-jie-fu-tian-siyuzu-kasutamusiyuzu-11/"" data-c="
+          &lt;p&gt;最高級の開発、オリジナルシューズの型作り、98％以上のマッチング、辰光製品、最高級のオリジナル、代金引換をサポートし、確実にお届けします。&lt;/p&gt;
+&lt;p&gt;グループは毎日更新され、割引特価、不定期で抽選イベントがあります。&lt;br&gt;
+&lt;a href=&#34;https://www.facebook.com/share/g/1BoJmP5yWW/?mibextid=WC7FNe&#34; &gt;クリックして参加facebookグループ&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.facebook.com/share/g/1BoJmP5yWW/?mibextid=WC7FNe&#34; &gt;https://www.facebook.com/share/g/1BoJmP5yWW/?mibextid=WC7FNe&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ココナッツ350 今日の特価 6500JPY 送料無料&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1749273589080.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;連絡先にLINEを追加する&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1749274086223.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">                 辰光シューズ業界 莆田シューズ カスタムシューズ 1:1</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://1969323.github.io/post/jin-ri-te-jie-qiao-1-dao-gou-quan-bu-bai-cai-jie-chu-li/"" data-c="
+          &lt;p&gt;💰（1650NT$包邮 ）可货到付款 合作私密 福利特价专供版本 外贸专供品质&lt;br&gt;
+乔1倒钩以下配色全部白菜价🥬处理 全新货无任何不良瑕 对应尺码如图所示 捡到即是赚到 ！&lt;br&gt;
+尺码  36-47.5&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735271189926.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;💰（1650NT$包邮 ）可货到付款    此款主张打破传统的工业化流水线设计限制，以Made by ideas的超级创意为理念，集结众多潮流设计师，结合时下最ing潮流风尚，为潮流爱好者打造彰品自我的专属潮品。同时尊重每个年轻人对于潮流的理解与选择，主张“让每个年轻人塑造自己的潮流”。&lt;br&gt;
+Size：36 36.5 37.5 38 38.5 39 40 40.5 41 42 42.5 43 44 44.5 45&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735437020012.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">            今日特价 乔1倒钩全部白菜价🥬处理</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://1969323.github.io/post/adidas-yeezy-boost-ye-zi-he-ji/"" data-c="
+          &lt;p&gt;Adidas Yeezy Boost 350 V2 &amp;quot;Yecher&amp;quot; 纯原G版本 进口巴斯夫真爆米花中底 混色针织拼接&lt;br&gt;
+椰子合集系列 市面最顶级品质  核心优势供货 区分市面一切版本&lt;br&gt;
+认准细节 其他配色款式陆续更新&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735269755065.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735269749196.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735269761810.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">                  Adidas Yeezy 椰子 Boost  合集</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://1969323.github.io/post/balenciaga-ba-li-shi-jia-he-ji/"" data-c="
+          &lt;p&gt;巴黎世家 3XL 知名巴黎大厂纯原 网面轻便型老爹鞋 在延续 Balenciaga Runner 轮廓和复杂鞋面塑胶结构的同时&lt;br&gt;
+增高宽体外凸的大底 继续延续复古老爹风向标！搭载柔软发泡材质大底 整体重量减轻 适应更多人群 轻松演绎复古潮流！&lt;br&gt;
+原装大盒从里到外一切百分百还原官方配置 顶级专供碾压一切版本！&lt;br&gt;
+尺码：35 36 37 38 39 40 41 42 43 44 45 46&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735265141976.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735267457884.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">        Balenciaga 巴黎世家  合集</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://1969323.github.io/post/ya-li-shan-da-alexander-mcqueen-mai-kun-he-ji/"" data-c="
+          &lt;p&gt;（新反光）芯片版 市售最强顶级代购版本 全网首发麦昆专柜直邮礼盒装版本，平台混卖正品货         Alexander McQueen&lt;br&gt;
+全套专柜包装物及配件#右脚鞋舌嵌入防伪芯片装置 秒杀任何版本 。面料采用进口丝绸亚光原版牛皮（原版同步）水染牛皮内里，牛皮垫脚 原版大底  回弹度极佳 耐磨又舒适 鞋底厚4.5cm&lt;br&gt;
+全套原版包装 进出专柜无压力&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735264671603.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735264677841.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">   亚历山大 Alexander McQueen 麦昆 合集</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://1969323.github.io/post/guan-yu-wo-men/"" data-c="
+          &lt;p&gt;关于我们&lt;br&gt;
+“☛我们来自于莆田安福的供货商，本团队对接莆田优质厂家主营市面各大品牌潮鞋及运动鞋货源。&lt;br&gt;
+☛我们提供于各大网络平台销售商或线下实体客户及个人零售需求。&lt;br&gt;
+☛坚决抵制各种充版本行为及销售低版本货源。&lt;br&gt;
+☛我们只专注做服务把服务做到极致不做一次性的生意。&lt;br&gt;
+☛拒绝垃圾通货请勿乱比价支持7天全新无理由退换。&lt;br&gt;
+☛保证无论是产品还是服务甚至是包装都能让您眼前一亮。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1969323.github.io/post-images/1735262961374.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735262967420.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735262973895.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735262980890.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">                                     关于我们</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://1969323.github.io/post/gucci-gu-chi-he-ji/"" data-c="
+          &lt;p&gt;古驰G家 最新爆款松糕厚底脏脏鞋彩色鞋带 MAC90 休闲 复古 做旧 脏脏鞋 小脏鞋  ，&lt;br&gt;
+原版购入开发 做货 古驰MAC90全新爆款系列 精致小巧的互扣式双G标识浪漫诠释此系列的美学理念。&lt;br&gt;
+选用米白色皮革，复古灵感巧妙融于运动鞋设计，焕新演绎品牌标识。&lt;br&gt;
+毒盒礼盒🎁包装  ▪面料：原版定制进口头层牛皮 ▪内里：原版定制进口 ▪大底：原版开模色TP&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735262210648.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735263435674.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735262567154.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735262575110.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">                   Gucci 古驰  合集</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://1969323.github.io/post/dao-gou-aj-xi-lie-he-ji/"" data-c="
+          &lt;p&gt;圈内最强倒钩系列 高端零售特供批次 产品品控稳定性领先行业 各方面均可对飙L版&lt;br&gt;
+良心定价不杀猪 SZ原厂全套原楦原纸板冲刀磨具开发 原厂皮料加持 原厂港宝加持定型后跟R度完美 同源原厂电绣 鬼脸飞翼针数密度立体效果一致 百分百一致原鞋 原厂拉帮工艺 针距密度一致 后跟弧度收口自然不对折&lt;br&gt;
+极致一眼正品既视感 进口玻璃冲刀皮料裁剪零毛边 全鞋电脑针车工艺 品控清洁度最高QC检验标准 免检产品 原厂订购鞋盒、鞋标、防尘纸、鞋撑、鞋带 追求极致的原厂味道&lt;br&gt;
+SIZE：36 36.5 37.5 38 38.5 39 40 40.5 41 42 42.5 43 44 44.5 45 46 47.5&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1969323.github.io/post-images/1735181454842.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735181506972.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;GX平台订单 Air Jordan AJ1 Low 低帮系列&lt;br&gt;
+唯一平替选择 市场第二梯队最强版 全部原鞋开发 原楦原纸板开发 全鞋电脑针车 原厂内置全掌气垫 原盒内在原标 唯一Zp原版鞋带绑法 免检产品 全头层皮料 完美零毛边处理 原厂配置全掌气垫 价格定位良心&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735181772477.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;纯原 Air Jordan AJ3  纯原  AJ4&lt;br&gt;
+原楦原纸板开发 确保原汁原味 原厂皮料质感色泽绝无偏差 完美中底拉帮 原厂中底钢印  原档案大底 如假白送 大底纹路 气垫通透度PU的回弹性均百分百还原 原厂电绣鞋舌飞人刺绣针数立体讲究精细欢迎对比正品原鞋 SIZE：40 40.5 41 42 42.5 43 44 44.5 45 46 47.5&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://1969323.github.io/post-images/1735182417666.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+">                 倒钩 aj系列 合集</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://1969323.github.io/post/lv-he-ji/"" data-c="
+          &lt;p&gt;LV Trainer 轻奢单品【代购级别】‼ZP级全套包装 LV Trainer&lt;/p&gt;
+&lt;p&gt;最新配色运动鞋原购购入历时近两个月开发打造配色超好看 完美楦型 调试了两个月鞋面独家订制压纹粒面小牛皮大底TPU、模具费2w+ 质感媲美原版垫脚聚米微料加透气英伦网布细节原版一致&lt;br&gt;
+请注意区分市面通货材料&lt;br&gt;
+尺码：35 36 37 38 39 40 41 42 43 44 45 46&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735179668069.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;【广东纯原版本】广东原产驴家 LV Louis Vuitton Trainer Maxi 小胖丁系列面包鞋&lt;br&gt;
+驴牌23款男士时装走秀款 官方最新批次原盒&lt;br&gt;
+原版购入开发历时半年开发打造&lt;br&gt;
+正式开始出货 原版完美楦型 无限调试&lt;br&gt;
+达到还原99% 鞋面独家订制细柔小牛皮&lt;br&gt;
+厚实织物鞋带 大底TPU 面包鞋&lt;br&gt;
+路易威登 Lv 可识别扣子串珠&lt;br&gt;
+Trainer备受瞩目 火热面包鞋再次拉满流量&lt;br&gt;
+各地网红上脚 立体饱满的彩色面包鞋身&lt;br&gt;
+超大版型重新诠释了 Virgil Abloh大热&lt;br&gt;
+Lv 运动时装鞋 私模Tpu大底&lt;br&gt;
+三色组合厚底 完美增高4-5cm&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1735180560561.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">                              LV 合集</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://1969323.github.io/post/chen-guang-xie-ye/"" data-c="
+          &lt;p&gt;頂級開發、原鞋開模，匹配98％以上，辰光出品、頂級純原 支持貨到付款&lt;/p&gt;
+&lt;p&gt;每日更新 折扣特價 不定期抽奖活动：&lt;a href=&#34;https://a.wsxc.cn/eYLNAd3&#34; &gt;https://a.wsxc.cn/eYLNAd3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;联系方式：&lt;br&gt;
+&lt;img src=&#34;https://1969323.github.io/post-images/1734831691870.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">                            辰光鞋業 莆田鞋 訂製鞋  1:1</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200
+    });
+  </script>
+
+
+
+
+
+
+
+</html>
